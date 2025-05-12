@@ -55,7 +55,7 @@ export default function Header() {
         </header>
       ) : (
         <header
-          className='min-w-screen h-screen absolute bg-[var(--background)] z-10 overflow-hidden flex basis-1/2 flex-col-reverse
+          className='min-w-screen h-screen fixed bg-[var(--background)] z-10 overflow-hidden flex basis-1/2 flex-col-reverse
             
             lg:flex-row
           '

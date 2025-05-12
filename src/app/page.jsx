@@ -16,16 +16,11 @@ export default function HomePage() {
 
   return (
     <>
-      {/* {loading && <LoadingScreen />} */}
+      {loading && <LoadingScreen />}
       {!loading && (
         <>
           
           <main className='min-h-screen pt-[10vh]'>
-            <p className='text-white'>TESTESTESTESTESTESTE</p>
-            <p className='text-white'>TESTESTESTESTESTESTE</p>
-            <p className='text-white'>TESTESTESTESTESTESTE</p>
-            <p className='text-white'>TESTESTESTESTESTESTE</p>
-            <p className='text-white'>TESTESTESTESTESTESTE</p>
           </main>
         </>
       )}

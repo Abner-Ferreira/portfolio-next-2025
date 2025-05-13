@@ -9,7 +9,7 @@ export default function Work() {
     <>
       <main className='min-h-screen py-[15vh] flex flex-col justify-center items-center'>
         {projects.map((project, idx) =>
-          project.side === 'right' ? (
+          idx % 2 === 0 ? (
             <ProjectSectionRight key={idx} {...project} />
           ) : (
             <ProjectSectionLeft key={idx} {...project} />

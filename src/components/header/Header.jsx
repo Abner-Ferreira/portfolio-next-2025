@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <>
       {!isClicked ? (
-        <header className='min-w-screen bg-[var(--yellow)] h-[10vh] fixed flex justify-between items-center'>
+        <header className='min-w-screen bg-[var(--yellow)] h-[10vh] fixed flex justify-between items-center z-50'>
           <img src='/logo.svg' alt='Logo portfolio' className='
             h-1/4 ml-10 mr-10
             md:h-2/6 md:ml-20

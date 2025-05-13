@@ -18,6 +18,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0D0D0D;
+    --backgroundFooter: #1A1A1A;
     --mainText: #E0E0E0;
     --secundaryText: #A3A3A3;
     --headerText: #1A1A1A;
@@ -29,7 +30,6 @@
     --darkRed: #B33434;
     --github: #2c3e3e;
     --linkedin: #2f4f4f;
-    /* --instagram: linear-gradient(to top,  #F58529, #DD2A7B, #8134AF, #515BD4); */
     --phone: #7a9e7e;
   }
 }

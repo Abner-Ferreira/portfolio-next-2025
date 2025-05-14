@@ -20,7 +20,7 @@ export default function ScrollLoader() {
           originX: 0,
           backgroundColor: 'var(--darkYellow)',
         }}
-        className="z-50"
+        className="z-20"
       />
     </>
   )

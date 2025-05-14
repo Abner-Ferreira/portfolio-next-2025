@@ -71,7 +71,7 @@ export default function Footer() {
           md:w-[100%] md:h-[100%]
           '
         >
-          <span className="md: text-3xl">WhastApp</span>
+          <span className="md: text-3xl">WhatsApp</span>
           <svg
             viewBox='0 0 85 85'
             className='
@@ -105,7 +105,7 @@ export default function Footer() {
           md:text-3xl 
         '
         >
-          Envie um e-mail
+          Send me a mail
         </p>
         <svg
           className=' h-7 w-7'
@@ -120,7 +120,7 @@ export default function Footer() {
       </a>
       <footer className='bg-[var(--backgroundFooter)] h-[10vh] w-screen overflow-hidden flex justify-center items-center'>
         <p className='text-[18px] text-[var(--mainText)] text-center'>
-          © Copyright 2025, Abner Ferreira. Todos os direitos reservados.
+          © Copyright 2025, Abner Ferreira. All Rights Reserved.
         </p>
       </footer>
     </>

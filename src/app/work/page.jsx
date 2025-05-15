@@ -1,5 +1,5 @@
-import ProjectSectionLeft from '@/components/projectSection/ProjectSectionLeft'
-import ProjectSectionRight from '@/components/projectSection/ProjectSectionRight'
+import ProjectSectionLeft from '@/components/project-section/ProjectSectionLeft'
+import ProjectSectionRight from '@/components/project-section/ProjectSectionRight'
 import { projects } from '@/data/projects'
 
 

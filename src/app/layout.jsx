@@ -1,9 +1,10 @@
 import Footer from '@/components/footer/Footer'
 import Header from '@/components/header/Header'
 import LoaderProvider from '@/components/loader-provider/LoaderProvider'
-import { JetBrains_Mono } from 'next/font/google'
-import './globals.css'
 import ScrollLoader from '@/components/scroll-loader/Scroll'
+import { JetBrains_Mono } from 'next/font/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
+import './globals.css'
 
 const jetBrains = JetBrains_Mono({
   weight: ['400'],
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
           <Footer />
         </LoaderProvider>
       </body>
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_TRACKING} />
     </html>
   )
 }

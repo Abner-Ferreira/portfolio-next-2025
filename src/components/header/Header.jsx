@@ -62,15 +62,16 @@ export default function Header() {
         >
           <div
             className='h-[60vh] w-[100vw]
-            sm: flex flex-wrap
+            sm:flex sm:flex-wrap
             lg:w-[50%] lg:grid lg:grid-cols-3 lg:h-[100vh]
           '
           >
             <motion.a
-              href='https://github.com/Abner-Ferreira'
+              href='https://github.com/abner-ferreira'
               target='_blank'
-              className='bg-[var(--github)] flex justify-center items-center no-underline h-[33.3%] w-[100%]
-                lg:h-[100%]
+              className='bg-[var(--github)] flex justify-center items-center no-underline h-[25%] w-[100%]
+                md:h-[33.3%]
+                lg:h-[100%] 
               '
               variants={cardVariants}
               initial='hidden'
@@ -113,8 +114,9 @@ export default function Header() {
             <motion.a
               href='https://linkedin.com/in/abner-ferreira'
               target='_blank'
-              className='bg-[var(--linkedin)] flex justify-center items-center no-underline h-[33.3%] w-[100%]
-                lg:h-[100%]
+              className='bg-[var(--linkedin)] flex justify-center items-center no-underline h-[25%] w-[100%]
+                md:h-[33.3%]
+                lg:h-[100%] 
               '
               variants={cardVariants}
               initial='hidden'
@@ -163,8 +165,9 @@ export default function Header() {
             <motion.a
               href='https://wa.me/5511994805611'
               target='_blank'
-              className='bg-[var(--phone)] flex justify-center items-center no-underline h-[33.3%] w-[100%]
-                lg:h-[100%]
+              className='bg-[var(--phone)] flex justify-center items-center no-underline h-[25%] w-[100%]
+                md:h-[33.3%]
+                lg:h-[100%] 
               '
               variants={cardVariants}
               initial='hidden'
@@ -271,7 +274,7 @@ export default function Header() {
                     lg:text-7xl lg:pr-24 lg:m-8
                   `}
                 >
-                  <Link href='/resume'>Resume</Link>
+                  <a href="/pdf/Abner_Ferreira_Frontend_Developer.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                 </li>
                 <li
                   className={` text-3xl m-4  ${isActive(

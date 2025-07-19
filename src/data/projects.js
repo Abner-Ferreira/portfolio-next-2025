@@ -11,8 +11,8 @@ export const projects = [
   {
     name: "My old portfolio",
     img: "/old-portfolio.png",
-    link: "https://portfolio-abner.vercel.app/",
-    github: "https://github.com/abner-ferreira/Portfolio-2025",
+    link: "https://portfolio-abner-2024.vercel.app/",
+    github: "https://github.com/abner-ferreira/Portfolio-2024",
     description: "Portfolio Abner is a personal portfolio website developed using ReactJS and Tailwind CSS, showcasing the developer's skills, projects, and professional background. The application features smooth navigation, responsive design, and interactive components, providing visitors with an engaging overview of the developer's work and expertise.",
     shortDescription: "Personal portfolio with React and Tailwind CSS UI",
     spotlight: true

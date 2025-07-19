@@ -1,9 +1,9 @@
 import Footer from '@/components/footer/Footer'
 import Header from '@/components/header/Header'
-import LoaderProvider from '@/components/loaderProvider/LoaderProvider'
+import LoaderProvider from '@/components/loader-provider/LoaderProvider'
 import { JetBrains_Mono } from 'next/font/google'
 import './globals.css'
-import ScrollLoader from '@/components/scrollLoader/Scroll'
+import ScrollLoader from '@/components/scroll-loader/Scroll'
 
 const jetBrains = JetBrains_Mono({
   weight: ['400'],

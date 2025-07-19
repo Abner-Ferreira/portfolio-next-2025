@@ -97,7 +97,7 @@ export default function Footer() {
       </div>
 
       <a
-        href='mailto:abnerferr2015@gmail.com'
+        href="mailto:abnerferr2015@gmail.com?subject=I'd like to learn more about your work, Abner!"
         className='bg-[var(--yellow)] p-6 w-screen overflow-x-hidden flex justify-center items-center gap-8 transition-opacity duration-300 hover:opacity-30 hover:cursor-pointer '
       >
         <p

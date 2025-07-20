@@ -67,7 +67,8 @@ export default function Footer() {
         </a>
         <a
           href='https://wa.me/5511994805611'
-          onClick={() => sendGAEvent('event', 'click_whatsapp', { location: 'link-footer' })}
+          id="whatsapp-footer"
+          // onClick={() => sendGAEvent('event', 'click_whatsapp', { location: 'whatsapp-footer' })}
           target='_blank'
           className='
           h-1/3 w-[100vw] bg-[var(--phone)] flex justify-evenly items-center transition-opacity duration-300 hover:opacity-30
@@ -101,6 +102,8 @@ export default function Footer() {
 
       <a
         href="mailto:abnerferr2015@gmail.com?subject=I'd like to learn more about your work, Abner!"
+        id="email-footer"
+        // onClick={() => sendGAEvent('event', 'click_email', { location: 'email-footer' })}
         className='bg-[var(--yellow)] p-6 w-screen overflow-x-hidden flex justify-center items-center gap-8 transition-opacity duration-300 hover:opacity-30 hover:cursor-pointer '
       >
         <p

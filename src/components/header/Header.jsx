@@ -165,7 +165,8 @@ export default function Header() {
 
             <motion.a
               href='https://wa.me/5511994805611'
-              onClick={() => sendGAEvent('event', 'click_whatsapp', { location: 'link-menu' })}
+              id='whatsapp-menu'
+              // onClick={() => sendGAEvent('event', 'click_whatsapp', { location: 'whatsapp-menu' })}
               target='_blank'
               className='bg-[var(--phone)] flex justify-center items-center no-underline h-[25%] w-[100%]
                 md:h-[33.3%]
@@ -287,9 +288,11 @@ export default function Header() {
                   lg:text-7xl lg:pr-24 lg:m-8
                 `}
                 >
-                  <Link href="mailto:abnerferr2015@gmail.com?subject=I'd like to learn more about your work, Abner!">
+                  <a href="mailto:abnerferr2015@gmail.com?subject=I'd like to learn more about your work, Abner!" id='email-menu' target='_blank'
+                  // onClick={() => sendGAEvent('event', 'click_email', { location: 'email-menu' })}
+                  >
                     Contact
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </nav>

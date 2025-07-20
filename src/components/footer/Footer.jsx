@@ -1,5 +1,7 @@
 'use client'
 
+import { sendGAEvent } from "@next/third-parties/google"
+
 export default function Footer() {
   return (
     <>
@@ -65,6 +67,7 @@ export default function Footer() {
         </a>
         <a
           href='https://wa.me/5511994805611'
+          onClick={() => sendGAEvent('event', 'click_whatsapp', { location: 'link-footer' })}
           target='_blank'
           className='
           h-1/3 w-[100vw] bg-[var(--phone)] flex justify-evenly items-center transition-opacity duration-300 hover:opacity-30

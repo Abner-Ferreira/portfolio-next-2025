@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { motion } from 'framer-motion';
+import { sendGAEvent } from '@next/third-parties/google'
 
 export default function Header() {
   const [isClicked, setIsClicked] = useState(false)
@@ -164,6 +165,7 @@ export default function Header() {
 
             <motion.a
               href='https://wa.me/5511994805611'
+              onClick={() => sendGAEvent('event', 'click_whatsapp', { location: 'link-menu' })}
               target='_blank'
               className='bg-[var(--phone)] flex justify-center items-center no-underline h-[25%] w-[100%]
                 md:h-[33.3%]

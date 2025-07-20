@@ -1,9 +1,9 @@
 'use client'
 
-import { motion } from 'framer-motion';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { motion } from 'framer-motion'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { useState } from 'react'
 
 export default function Header() {
   const [isClicked, setIsClicked] = useState(false)
@@ -12,10 +12,9 @@ export default function Header() {
 
   const isActive = link => (pathname === link ? 'underline' : '')
 
-
   const cardVariants = {
     hidden: { opacity: 0, x: -100 },
-    visible: (i) => ({
+    visible: i => ({
       opacity: 1,
       x: 0,
       transition: {
@@ -24,33 +23,42 @@ export default function Header() {
         ease: 'easeOut',
       },
     }),
-  };
-  
+  }
 
   return (
     <>
       {!isClicked ? (
         <header className='min-w-screen bg-[var(--yellow)] h-[10vh] fixed flex justify-between items-center z-50'>
-          <img src='/logo.svg' alt='Logo portfolio' className='
+          <img
+            src='/logo.svg'
+            alt='Logo portfolio'
+            className='
             h-1/4 ml-10 mr-10
             md:h-2/6 md:ml-20
-          ' />
+          '
+          />
           <div
             className='flex flex-col items-start gap-[6px] mr-20 cursor-pointer group'
             onClick={() => setIsClicked(true)}
           >
-            <span className='
+            <span
+              className='
               h-[6px] w-[36px] bg-[var(--headerText)] rounded-full transition-transform duration-300 group-hover:-translate-y-1
               md:h-[8px] md:w-[56px]
-            '></span>
-            <span className='
+            '
+            ></span>
+            <span
+              className='
               h-[6px] w-[36px] bg-[var(--headerText)] rounded-full self-end
               md:h-[8px] md:w-[56px]
-            '></span>
-            <span className='
+            '
+            ></span>
+            <span
+              className='
               h-[6px] w-[36px] bg-[var(--headerText)] rounded-full transition-transform duration-300 group-hover:translate-y-1
               md:h-[8px] md:w-[56px]
-            '></span>
+            '
+            ></span>
           </div>
         </header>
       ) : (
@@ -101,7 +109,7 @@ export default function Header() {
                 </svg>
 
                 <p
-                   className='text-[var(--white)] text-2xl
+                  className='text-[var(--white)] text-2xl
                    sm:text-3xl
                    md:text-5xl
                    lg:text-7xl
@@ -205,7 +213,7 @@ export default function Header() {
                 </svg>
 
                 <p
-                   className='text-[var(--white)] text-2xl
+                  className='text-[var(--white)] text-2xl
                    sm:text-3xl
                    md:text-5xl
                    lg:text-7xl
@@ -269,9 +277,19 @@ export default function Header() {
                   <Link href='/work'>Work</Link>
                 </li>
                 <li
-                  className="text-3xl m-4"
+                  className='text-3xl m-4 
+                    sm:self-end sm:m-4 sm:pr-12 sm:text-5xl
+                    md:m-4 md:pr-8 md:text-5xl
+                    lg:text-7xl lg:pr-24 lg:m-8'
                 >
-                  <a href="/pdf/Abner_Ferreira_Frontend_Developer.pdf" target="_blank" rel="noopener noreferrer" version="cv-2025">Resume</a>
+                  <a
+                    href='/pdf/Abner_Ferreira_Frontend_Developer.pdf'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    version='cv-2025'
+                  >
+                    Resume
+                  </a>
                 </li>
                 <li
                   className={` text-3xl m-4  ${isActive(
@@ -282,8 +300,11 @@ export default function Header() {
                   lg:text-7xl lg:pr-24 lg:m-8
                 `}
                 >
-                  <a href="mailto:abnerferr2015@gmail.com?subject=I'd like to learn more about your work, Abner!" id='email-menu' target='_blank'
-                  // onClick={() => sendGAEvent('event', 'click_email', { location: 'email-menu' })}
+                  <a
+                    href="mailto:abnerferr2015@gmail.com?subject=I'd like to learn more about your work, Abner!"
+                    id='email-menu'
+                    target='_blank'
+                    // onClick={() => sendGAEvent('event', 'click_email', { location: 'email-menu' })}
                   >
                     Contact
                   </a>

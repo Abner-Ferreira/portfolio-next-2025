@@ -1,10 +1,9 @@
 'use client'
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { useState } from 'react'
 import { motion } from 'framer-motion';
-import { sendGAEvent } from '@next/third-parties/google'
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 
 export default function Header() {
   const [isClicked, setIsClicked] = useState(false)
@@ -69,6 +68,7 @@ export default function Header() {
           >
             <motion.a
               href='https://github.com/abner-ferreira'
+              id='github-menu'
               target='_blank'
               className='bg-[var(--github)] flex justify-center items-center no-underline h-[25%] w-[100%]
                 md:h-[33.3%]

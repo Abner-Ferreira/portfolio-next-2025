@@ -1,6 +1,5 @@
 'use client'
 
-import { sendGAEvent } from "@next/third-parties/google"
 
 export default function Footer() {
   return (
@@ -11,6 +10,7 @@ export default function Footer() {
       '>
         <a
           href='https://github.com/abner-ferreira'
+          id='github-footer'
           target='_blank'
           className='
           h-1/3 w-[100vw] bg-[var(--github)] flex justify-evenly items-center transition-opacity duration-300 hover:opacity-30

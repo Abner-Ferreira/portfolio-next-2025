@@ -94,6 +94,7 @@ export default function ProjectSectionRight({
 
             <a
               href={github}
+              id={`Projeto - ${name}`}
               target='_blank'
               className='w-[100%] flex justify-center items-center bg-transparent text-[var(--yellow)] px-6 py-2 border-b-2 border-[var(--yellow)] hover:border-2 transition-all duration-75 self-center hover:cursor-pointer
               md:self-start md:w-[40%]

@@ -269,15 +269,9 @@ export default function Header() {
                   <Link href='/work'>Work</Link>
                 </li>
                 <li
-                  className={` text-3xl m-4  ${isActive(
-                    '/resume'
-                  )} hover:underline
-                    sm:self-end sm:m-4 sm:pr-12 sm:text-5xl
-                    md:m-4 md:pr-8 md:text-5xl
-                    lg:text-7xl lg:pr-24 lg:m-8
-                  `}
+                  className="text-3xl m-4"
                 >
-                  <a href="/pdf/Abner_Ferreira_Frontend_Developer.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                  <a href="/pdf/Abner_Ferreira_Frontend_Developer.pdf" target="_blank" rel="noopener noreferrer" version="cv-2025">Resume</a>
                 </li>
                 <li
                   className={` text-3xl m-4  ${isActive(

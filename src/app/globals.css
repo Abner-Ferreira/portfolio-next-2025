@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root {
+/* :root {
   --background: #FFFFFF;
   --mainText: #0D0D0D;
   --secundaryText: #444444;
@@ -11,11 +11,11 @@
   --darkYellow: #A07600;
   --red: #B33434;
   --darkRed: #8E2525;
-}
+} */
 
 
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) { */
   :root {
     --background: #0D0D0D;
     --backgroundFooter: #1A1A1A;
@@ -32,7 +32,7 @@
     --linkedin: #2f4f4f;
     --phone: #7a9e7e;
   }
-}
+/* } */
 
 body, html {
   background-color: var(--background);

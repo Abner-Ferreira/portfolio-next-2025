@@ -2,9 +2,8 @@ import Footer from '@/components/footer/Footer'
 import Header from '@/components/header/Header'
 import LoaderProvider from '@/components/loader-provider/LoaderProvider'
 import ScrollLoader from '@/components/scroll-loader/Scroll'
-import { JetBrains_Mono } from 'next/font/google'
-import { GoogleAnalytics } from '@next/third-parties/google'
 import { GoogleTagManager } from '@next/third-parties/google'
+import { JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 
 const jetBrains = JetBrains_Mono({
@@ -33,7 +32,6 @@ export default function RootLayout({ children }) {
         </LoaderProvider>
       </body>
       <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_TRACKING} />
-      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_TRACKING} />
     </html>
   )
 }

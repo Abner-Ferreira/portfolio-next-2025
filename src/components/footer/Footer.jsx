@@ -107,7 +107,7 @@ export default function Footer() {
         className='bg-[var(--yellow)] p-6 w-screen overflow-x-hidden flex justify-center items-center gap-8 transition-opacity duration-300 hover:opacity-30 hover:cursor-pointer '
       >
         <p
-          className='text-[var(--white)] text-[18px]
+          className='text-[var(--black)] text-[18px]
           md:text-3xl 
         '
         >
@@ -116,7 +116,7 @@ export default function Footer() {
         <svg
           className=' h-7 w-7'
           role='img'
-          fill="var(--white)"
+          fill="var(--black)"
           viewBox='0 0 24 24'
           xmlns='http://www.w3.org/2000/svg'
         >

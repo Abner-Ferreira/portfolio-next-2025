@@ -12,7 +12,7 @@ export default function LoaderProvider({ children }) {
     setLoading(true)
     const timeout = setTimeout(() => {
       setLoading(false)
-    }, 2500) // tempo da animação
+    }, 2600) // tempo da animação
 
     return () => clearTimeout(timeout)
   }, [pathname])

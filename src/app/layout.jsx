@@ -13,9 +13,25 @@ const jetBrains = JetBrains_Mono({
 })
 
 export const metadata = {
-  title: 'Abner Ferreira | Dev Front-end',
+  title: {
+    default: 'Abner Ferreira | Dev Front-end'
+  },
   description:
-    'Portfólio de Abner Rodrigues Ferreira, desenvolvedor front-end especializado em ReactJS, NextJS. Experiência em e-commerces, UX/UI, acessibilidade e performance web com foco em boas práticas e design system. Portfolio of Abner Rodrigues Ferreira, front-end developer specialized in ReactJS, NextJS. Experienced in e-commerce, UX/UI, accessibility, and web performance with a strong focus on best practices and design systems.',
+    'Portfolio of Abner Rodrigues Ferreira, front-end developer specialized in ReactJS, NextJS. Experienced in e-commerce, UX/UI, accessibility, and web performance with a strong focus on best practices and design systems.',
+  openGraph: {
+    title: 'Abner Ferreira | Dev Front-end',
+    description: 'Portfolio of Abner Rodrigues Ferreira, front-end developer specialized in ReactJS, NextJS. Experienced in e-commerce, UX/UI, accessibility, and web performance with a strong focus on best practices and design systems.',
+    url: 'https://portfolio-abner.vercel.app',
+    siteName: 'Abner.Dev',
+    images: [
+      {
+        url: 'https://portfolio-abner.vercel.app/logo.svg', 
+        width: 1200,
+        height: 630,
+        alt: 'Portfolio Logo',
+      },
+    ],
+  },
 }
 
 export default function RootLayout({ children }) {

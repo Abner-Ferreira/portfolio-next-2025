@@ -29,14 +29,24 @@ export default function Header() {
     <>
       {!isClicked ? (
         <header className='min-w-screen bg-[var(--yellow)] h-[10vh] fixed flex justify-between items-center z-50'>
-          <img
-            src='/logo.svg'
-            alt='Logo portfolio'
+          <a
+            href='/'
             className='
-            h-1/4 ml-10 mr-10
-            md:h-2/6 md:ml-20
-          '
-          />
+              h-1/4 ml-10 mr-10
+              md:h-2/6 md:ml-20
+            '
+          >
+            <img
+              src='/logo.svg'
+              alt='Logo portfolio'
+              className='
+                h-[100%] ml-10 mr-10
+                md:h-[100%] md:ml-20
+              '
+              loading="eager"
+              fetchpriority="high"
+            />
+          </a>
           <div
             className='flex flex-col items-start gap-[6px] mr-20 cursor-pointer group'
             onClick={() => setIsClicked(true)}

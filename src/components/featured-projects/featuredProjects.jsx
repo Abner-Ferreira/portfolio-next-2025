@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import CardPin from '../cardPin/CardPin'
 import Titles from '../titles/Titles'
 

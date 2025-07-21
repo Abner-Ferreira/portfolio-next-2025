@@ -1,7 +1,7 @@
 'use client'
 
-import Image from 'next/image'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import Tilt from 'react-parallax-tilt'
 
 export default function ProjectSectionLeft({

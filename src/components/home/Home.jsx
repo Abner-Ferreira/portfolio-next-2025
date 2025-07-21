@@ -74,7 +74,7 @@ export default function Home() {
               </span>{' '}
               interfaces.
             </p>
-            <p className='text-[10px] text-justify
+            <p className='text-[12px] text-justify
               md:text-[12px]
               lg:text-[14px]
             '>
@@ -96,6 +96,7 @@ export default function Home() {
             <Image
               src={Abner}
               alt='Abner cartooned image'
+              priority
               className='hidden w-[200px] h-[250px]
               md:block md:w-[300px]
               lg:w-[500px] lg:h-[500px]

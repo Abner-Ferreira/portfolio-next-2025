@@ -14,9 +14,9 @@ export default function CardPin() {
             key={project.name}
           >
             <div className='flex basis-full flex-col p-4 tracking-tight sm:basis-1/2 w-[20rem] h-[20rem]'>
-              <h3 className='max-w-xs !pb-2 !m-0 font-bold text-base text-[var(--mainText)]'>
+              <h1 className='max-w-xs !pb-2 !m-0 font-bold text-base text-[var(--mainText)]'>
                 {project.name}
-              </h3>
+              </h1>
               <div className='text-base !m-0 !p-0 font-normal'>
                 <span className='text-[var(--secundaryText)]'>
                   {project.shortDescription}

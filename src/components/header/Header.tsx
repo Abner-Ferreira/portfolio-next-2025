@@ -1,20 +1,24 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { motion, Variants } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState } from 'react'
+import { useState, MouseEvent } from 'react'
+import Switcher from '../switch/Switcher'
 
 export default function Header() {
   const [isClicked, setIsClicked] = useState(false)
 
   const pathname = usePathname()
 
-  const isActive = link => (pathname === link ? 'underline' : '')
+  const isActive = (link: string): string =>
+    pathname === link ? 'underline' : ''
 
-  const cardVariants = {
+  // Define o tipo do variants para suporte de 'custom' parâmetro number
+  const cardVariants: Variants = {
     hidden: { opacity: 0, x: -100 },
-    visible: i => ({
+    visible: (i: number) => ({
       opacity: 1,
       x: 0,
       transition: {
@@ -24,6 +28,20 @@ export default function Header() {
       },
     }),
   }
+
+  // Para evitar warnings do React, defina onClick com tipo correto
+  const handleMenuClick = (e: MouseEvent<HTMLDivElement>) => {
+    e.preventDefault()
+    setIsClicked(true)
+  }
+
+  const handleCloseClick = (e: MouseEvent<HTMLDivElement>) => {
+    e.preventDefault()
+    setIsClicked(false)
+  }
+
+  const t = useTranslations('Header')
+  const tEmail = useTranslations('Footer')
 
   return (
     <>
@@ -43,38 +61,45 @@ export default function Header() {
                 h-[100%] ml-10 mr-10
                 md:h-[100%] md:ml-20
               '
-              loading="eager"
-              fetchpriority="high"
+              loading='eager'
+              fetchPriority='high'
             />
           </a>
           <div
-            className='flex flex-col items-start gap-[6px] mr-20 cursor-pointer group'
-            onClick={() => setIsClicked(true)}
+            className='flex justify-between items-center mr-10 w-36
+            md:w-48 md:mr-20
+          '
           >
-            <span
-              className='
+            <Switcher />
+
+            <div
+              className='flex flex-col items-start gap-[6px]  cursor-pointer group'
+              onClick={handleMenuClick}
+            >
+              <span
+                className='
               h-[6px] w-[36px] bg-[var(--headerText)] rounded-full transition-transform duration-300 group-hover:-translate-y-1
               md:h-[8px] md:w-[56px]
             '
-            ></span>
-            <span
-              className='
+              ></span>
+              <span
+                className='
               h-[6px] w-[36px] bg-[var(--headerText)] rounded-full self-end
               md:h-[8px] md:w-[56px]
             '
-            ></span>
-            <span
-              className='
+              ></span>
+              <span
+                className='
               h-[6px] w-[36px] bg-[var(--headerText)] rounded-full transition-transform duration-300 group-hover:translate-y-1
               md:h-[8px] md:w-[56px]
             '
-            ></span>
+              ></span>
+            </div>
           </div>
         </header>
       ) : (
         <header
           className='min-w-screen h-screen fixed bg-[var(--background)] z-50 overflow-hidden flex basis-1/2 flex-col-reverse
-            
             lg:flex-row
           '
         >
@@ -88,6 +113,7 @@ export default function Header() {
               href='https://github.com/abner-ferreira'
               id='github-menu'
               target='_blank'
+              rel='noopener noreferrer'
               className='bg-[var(--github)] flex justify-center items-center no-underline h-[25%] w-[100%]
                 md:h-[33.3%]
                 lg:h-[100%] 
@@ -133,6 +159,7 @@ export default function Header() {
             <motion.a
               href='https://linkedin.com/in/abner-ferreira'
               target='_blank'
+              rel='noopener noreferrer'
               className='bg-[var(--linkedin)] flex justify-center items-center no-underline h-[25%] w-[100%]
                 md:h-[33.3%]
                 lg:h-[100%] 
@@ -186,6 +213,7 @@ export default function Header() {
               id='whatsapp-menu'
               // onClick={() => sendGAEvent('event', 'click_whatsapp', { location: 'whatsapp-menu' })}
               target='_blank'
+              rel='noopener noreferrer'
               className='bg-[var(--phone)] flex justify-center items-center no-underline h-[25%] w-[100%]
                 md:h-[33.3%]
                 lg:h-[100%] 
@@ -241,9 +269,8 @@ export default function Header() {
                 className='relative w-[40px] h-[40px] gap-[6px] mr-10 hover:cursor-pointer
                   sm:mr-15
                   md:mr-14
-                  
                 '
-                onClick={() => setIsClicked(false)}
+                onClick={handleCloseClick}
               >
                 <span
                   className='absolute top-1/2 left-1/2 h-[8px] w-[36px] bg-[var(--headerText)] rounded-full rotate-45 -translate-x-1/2 -translate-y-1/2
@@ -273,7 +300,7 @@ export default function Header() {
                     lg:text-7xl lg:pr-24 lg:m-8
                   `}
                 >
-                  <Link href='/'>Home</Link>
+                  <Link href='/'>{t('header_menu_1')}</Link>
                 </li>
                 <li
                   className={` text-3xl m-4  ${isActive(
@@ -284,10 +311,10 @@ export default function Header() {
                     lg:text-7xl lg:pr-24 lg:m-8
                   `}
                 >
-                  <Link href='/work'>Work</Link>
+                  <Link href='/work'>{t('header_menu_2')}</Link>
                 </li>
                 <li
-                  className='text-3xl m-4 
+                  className='text-3xl m-4 hover:underline
                     sm:self-end sm:m-4 sm:pr-12 sm:text-5xl
                     md:m-4 md:pr-8 md:text-5xl
                     lg:text-7xl lg:pr-24 lg:m-8'
@@ -296,9 +323,9 @@ export default function Header() {
                     href='/pdf/Abner_Ferreira_Frontend_Developer.pdf'
                     target='_blank'
                     rel='noopener noreferrer'
-                    version='cv-2025'
+                    data-version='cv-2025'
                   >
-                    Resume
+                    {t('header_menu_3')}
                   </a>
                 </li>
                 <li
@@ -311,12 +338,12 @@ export default function Header() {
                 `}
                 >
                   <a
-                    href="mailto:abnerferr2015@gmail.com?subject=I'd like to learn more about your work, Abner!"
+                    href={`mailto:abnerferr2015@gmail.com?subject=${tEmail("footer_email_subject")}`}
                     id='email-menu'
                     target='_blank'
-                    // onClick={() => sendGAEvent('event', 'click_email', { location: 'email-menu' })}
+                    rel='noopener noreferrer'
                   >
-                    Contact
+                    {t('header_menu_4')}
                   </a>
                 </li>
               </ul>

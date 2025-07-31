@@ -3,53 +3,27 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Tilt from 'react-parallax-tilt'
+import { ProjectSectionProps } from './types'
+import { useTranslations } from 'next-intl'
 
-export default function ProjectSectionRight({
+export default function ProjectSectionLeft({
   name,
   link,
   github,
   img,
   description,
-}) {
+} : ProjectSectionProps) {
+
+  const t = useTranslations("Work")
+  
   return (
     <>
       <section
-        className='h-[100vh] text-[var(--mainText)] px-6 py-20 flex flex-col gap-12 my-10
+        className='h-[100vh] text-[var(--mainText)] px-6 py-20 flex flex-col-reverse gap-12 my-10
         md:h-[80vh] md:w-[90%] md:flex-row md:items-center md:justify-center md:gap-16 md:px-20
         lg:h-[60vh]
        '
       >
-        {/* Coluna da ESQUERDA */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className='w-full flex justify-center
-            md:w-1/2 md:justify-start
-          '
-        >
-          <Tilt
-            tiltMaxAngleX={10}
-            tiltMaxAngleY={15}
-            glareEnable={true}
-            glareMaxOpacity={0.1}
-            glareColor='#ffffff'
-            scale={1.02}
-            className='max-w-[300px] w-full
-              sm:max-w-[350px]
-              md:max-w-[500px]
-            '
-          >
-            <Image
-              src={img}
-              alt={name}
-              width={800}
-              height={600}
-              className='rounded-2xl shadow-2xl w-full h-auto'
-            />
-          </Tilt>
-        </motion.div>
-
         {/* Coluna da DIREITA */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -64,7 +38,7 @@ export default function ProjectSectionRight({
               text-[18px] font-bold text-[var(--yellow)] border-4 border-[var(--yellow)] inline-block px-6 py-2 mb-8 self-center 
               sm:text-2xl
               md:text-3xl md:self-start
-            '
+          '
           >
             {name}
           </h2>
@@ -89,7 +63,7 @@ export default function ProjectSectionRight({
               md:self-start md:w-[40%]
             '
             >
-              visit →
+              {t("work_visit_project")}
             </a>
 
             <a
@@ -100,9 +74,40 @@ export default function ProjectSectionRight({
               md:self-start md:w-[40%]
             '
             >
-              view code →
+              {t("work_view_project_code")}
             </a>
           </div>
+        </motion.div>
+
+        {/* Coluna da ESQUERDA */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className='w-full flex justify-center
+            md:w-1/2 md:justify-end
+          '
+        >
+          <Tilt
+            tiltMaxAngleX={10}
+            tiltMaxAngleY={15}
+            glareEnable={true}
+            glareMaxOpacity={0.1}
+            glareColor='#ffffff'
+            scale={1.02}
+            className='max-w-[300px] w-full
+              sm:max-w-[350px]
+              md:max-w-[500px]
+            '
+          >
+            <Image
+              src={img}
+              alt={name}
+              width={800}
+              height={600}
+              className='rounded-2xl shadow-2xl w-full h-auto'
+            />
+          </Tilt>
         </motion.div>
       </section>
     </>

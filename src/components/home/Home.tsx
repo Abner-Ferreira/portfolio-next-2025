@@ -3,8 +3,12 @@
 import Image from 'next/image'
 import Abner from '../../../public/abner-img.svg'
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 
 export default function Home() {
+
+  const t = useTranslations("Homepage")
+
   return (
     <>
       <motion.section
@@ -38,7 +42,7 @@ export default function Home() {
               lg:w-[60%] 
               '
             >
-              Hi there! I'm Abner Ferreira
+              {t("hero_greetings")}
               <picture className='ml-1 md:ml-3'>
                 <source
                   srcSet='https://fonts.gstatic.com/s/e/notoemoji/latest/1f919_1f3fe/512.webp'
@@ -57,34 +61,15 @@ export default function Home() {
               md:text-2xl
               lg:text-3xl
             '>
-              I'm a{' '}
-              <span className='font-bold text-[var(--darkYellow)]'>
-                Frontend Developer
-              </span>{' '}
-              focused on{' '}
-              <span className='font-bold text-[var(--darkYellow)]'>Modern</span>
-              ,{' '}
-              <span className='font-bold text-[var(--darkYellow)]'>
-                Accessible
-              </span>
-              , and
-              <span className='font-bold text-[var(--darkYellow)]'>
-                {' '}
-                Responsive
-              </span>{' '}
-              interfaces.
+             {t.rich('hero_introduction', {
+              bolderWord: (chunks) => <span className='font-bold text-[var(--darkYellow)]'>{chunks}</span>
+             })}
             </p>
             <p className='text-[12px] text-justify
               md:text-[12px]
               lg:text-[14px]
             '>
-              Frontend Engineer specializing in React, Next.js, and TypeScript.
-              I turn challenges into high-performance solutions with fast,
-              precise execution. A strong communicator and collaborator, I
-              deliver complex projects on time while bridging technical
-              excellence with business vision. Continuously innovating yet
-              unafraid of the necessary grind, from pixel-perfect UI to the most
-              challenging integrations.
+              {t("hero_description")}
             </p>
           </motion.div>
 
@@ -95,7 +80,7 @@ export default function Home() {
           >
             <Image
               src={Abner}
-              alt='Abner cartooned image'
+              alt={t("hero_image_alt")}
               priority
               className='hidden w-[200px] h-[250px]
               md:block md:w-[300px]

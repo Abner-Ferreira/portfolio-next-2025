@@ -1,10 +1,14 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, ReactNode } from 'react'
 import AbnerDevLoader from '../loading/AbnerDevLoader'
 
-export default function LoaderProvider({ children }) {
+interface LoaderProviderProps {
+  children: ReactNode
+}
+
+export default function LoaderProvider({ children }: LoaderProviderProps) {
   const pathname = usePathname()
   const [loading, setLoading] = useState(true)
 

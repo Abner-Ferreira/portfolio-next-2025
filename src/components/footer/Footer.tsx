@@ -1,7 +1,12 @@
 'use client'
 
+import { useTranslations } from "next-intl"
+
 
 export default function Footer() {
+
+  const t = useTranslations("Footer")
+  
   return (
     <>
       <div className='
@@ -101,9 +106,8 @@ export default function Footer() {
       </div>
 
       <a
-        href="mailto:abnerferr2015@gmail.com?subject=I'd like to learn more about your work, Abner!"
+        href={`mailto:abnerferr2015@gmail.com?subject=${t("footer_email_subject")}`}
         id="email-footer"
-        // onClick={() => sendGAEvent('event', 'click_email', { location: 'email-footer' })}
         className='bg-[var(--yellow)] p-6 w-screen overflow-x-hidden flex justify-center items-center gap-8 transition-opacity duration-300 hover:opacity-30 hover:cursor-pointer '
       >
         <p
@@ -111,7 +115,7 @@ export default function Footer() {
           md:text-3xl 
         '
         >
-          Send me a mail
+          {t("footer_send_email")}
         </p>
         <svg
           className=' h-7 w-7'
@@ -126,7 +130,7 @@ export default function Footer() {
       </a>
       <footer className='bg-[var(--backgroundFooter)] h-[10vh] w-screen overflow-hidden flex justify-center items-center'>
         <p className='text-[18px] text-[var(--mainText)] text-center'>
-          © Copyright 2025, Abner Ferreira. All Rights Reserved.
+          {t("footer_copyrights")}
         </p>
       </footer>
     </>

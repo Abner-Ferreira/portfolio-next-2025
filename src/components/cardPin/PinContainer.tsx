@@ -3,13 +3,22 @@ import { useState } from 'react'
 import { PinPerspective } from './PinPerspective'
 import { cn } from './utils'
 
+interface PinContainerProps {
+  children: React.ReactNode
+  title: string
+  href?: string
+  className?: string
+  containerClassName?: string
+}
+
 export function PinContainer({
   children,
   title,
   href = '/',
   className,
   containerClassName,
-}) {
+}: PinContainerProps) {
+
   const [transform, setTransform] = useState(
     'translate(-50%,-50%) rotateX(0deg)'
   )

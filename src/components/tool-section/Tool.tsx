@@ -1,16 +1,24 @@
+'use client'
+
 import { tools } from '@/data/tools'
 import Titles from '../titles/Titles'
+import { useTranslations } from 'next-intl'
 
 export default function ToolSection() {
+  const t = useTranslations('Tooling')
+
   return (
     <>
       <section className='min-h-[50vh] flex flex-col justify-center items-center'>
-        <Titles title={'Tooling'}/>
+        <a href='#tooling'>
+          <Titles title={t('tooling_title')} />
+        </a>
 
         <div
           className='w-full flex flex-wrap justify-center gap-5 bg-[var(--backgroundFooter)] p-7 rounded-2xl 
             md:max-w-[60vw]
         '
+          id='tooling'
         >
           {tools.map((tool, index) => (
             <div

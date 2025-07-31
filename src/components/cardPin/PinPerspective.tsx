@@ -2,8 +2,18 @@
 
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
-export function PinPerspective({ title, href }) {
+
+interface PinPerspectiveProps {
+  title: string;
+  href: string;
+}
+
+export function PinPerspective({ title, href }: PinPerspectiveProps) {
+
+  const t = useTranslations("Spotlight")
+
   return (
     <motion.div className="pointer-events-none w-96 h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 transition duration-500">
       <div className="w-full h-full -mt-7 flex-none inset-0">
@@ -13,7 +23,7 @@ export function PinPerspective({ title, href }) {
             target="_blank"
             className="relative flex space-x-2 items-center z-10 rounded-full py-0.5 px-4 ring-1 ring-white/10"
           >
-            <span className="relative z-10 text-[var(--mainText)] text-xs font-bold inline-block py-0.5">Visit {title}</span>
+            <span className="relative z-10 text-[var(--mainText)] text-xs font-bold inline-block py-0.5">{t("spotlight_link")} {title}</span>
             <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] transition-opacity duration-500 group-hover/btn:opacity-40" />
           </a>
         </div>

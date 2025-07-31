@@ -1,0 +1,50 @@
+{
+  "LanguageSwitcher": {
+    "label": "Idiomas"
+  },
+  "Header": {
+    "header_menu_1": "Inicio",
+    "header_menu_2": "Trabajos",
+    "header_menu_3": "Currículum",
+    "header_menu_4": "Contacto"
+  },
+  "Footer": {
+    "footer_send_email": "Envíame un correo",
+    "footer_email_subject": "¡Me gustaría conocer más sobre tu trabajo, Abner!",
+    "footer_copyrights": "© Copyright 2025, Abner Ferreira. Todos los derechos reservados."
+  },
+  "Homepage": {
+    "hero_greetings": "¡Hola! Soy Abner Ferreira",
+    "hero_introduction": "Soy <bolderWord>Desarrollador Frontend</bolderWord> enfocado en interfaces <bolderWord>Modernas</bolderWord>, <bolderWord>Accesibles</bolderWord> y <bolderWord>Responsivas</bolderWord>.",
+    "hero_description": "Ingeniero Frontend especializado en React, Next.js y TypeScript. Transformo desafíos en soluciones de alto rendimiento con ejecución rápida y precisa. Comunicador y colaborador eficaz, entrego proyectos complejos a tiempo uniendo excelencia técnica con visión empresarial. Siempre innovando, sin miedo al trabajo duro, desde interfaces pixel-perfect hasta las integraciones más desafiantes.",
+    "hero_image_alt": "Imagen caricaturizada de Abner"
+  },
+  "Spotlight": {
+    "spotlight_title": "Destacado",
+    "spotlight_link": "Visitar"
+  },
+  "Tooling": {
+    "tooling_title": "Herramientas"
+  },
+  "Work": {
+    "work_title": "< Todos los trabajos />",
+    "work_visit_project": "visitar ->",
+    "work_view_project_code": "ver código ->"
+  },
+  "Projects": {
+    "projects_greendrive_description": "GreenDrive es una plataforma conceptual sobre sostenibilidad automotriz, construida con ReactJS, Hooks, Context API y CSS Module. Presenta contenido generado por IA e imágenes libres de derechos para mostrar tecnologías ecológicas en una interfaz limpia y responsiva.",
+    "projects_greendrive_short": "Tecnología automotriz ecológica con React y diseño limpio",
+    "projects_portfolio_description": "Portfolio Abner es un sitio web personal desarrollado con ReactJS y Tailwind CSS, que muestra las habilidades, proyectos y trayectoria profesional del desarrollador. La aplicación ofrece navegación fluida, diseño responsivo y componentes interactivos, brindando una experiencia atractiva a los visitantes.",
+    "projects_portfolio_short": "Portafolio personal con React y diseño Tailwind CSS",
+    "projects_easybank_description": "Easybank es una landing page moderna para un banco digital ficticio, creada con ReactJS y estilizada con CSS Module. Cuenta con un diseño limpio y responsivo, enfocado en una experiencia móvil e intuitiva para mostrar servicios bancarios de forma clara y atractiva.",
+    "projects_easybank_short": "Interfaz moderna de banco digital con React y diseño móvil",
+    "projects_advice_description": "Advice Generator es una app minimalista y responsiva creada con ReactJS y CSS Module, que obtiene consejos aleatorios desde la Advice Slip API. El proyecto destaca la integración con APIs, actualización dinámica de contenido y diseño limpio con una experiencia de usuario sencilla.",
+    "projects_advice_short": "App de consejos responsiva con API y diseño minimalista",
+    "projects_tipcalculator_description": "Tip Calculator es una app web responsiva e interactiva construida con ReactJS y CSS Module. Permite calcular la propina y el costo total por persona basado en el monto de la cuenta, porcentaje de propina y número de personas. Este proyecto enfatiza el diseño amigable, cálculos en tiempo real y una estructura clara para practicar manejo de estado y formularios en React.",
+    "projects_tipcalculator_short": "Calculadora de propinas interactiva con actualizaciones en tiempo real",
+    "projects_cinetag_description": "Cinetag es una app web responsiva desarrollada con ReactJS y Tailwind CSS que permite explorar y administrar una colección de películas. Presenta enrutamiento dinámico, componentes interactivos y un diseño limpio, brindando una experiencia atractiva. Este proyecto destaca el uso de hooks, rutas y diseño responsivo con React.",
+    "projects_cinetag_short": "App para explorar películas con React, rutas y diseño limpio",
+    "projects_productpage_description": "La Página de Producto de la Camiseta del Corinthians es una landing page estática construida con ReactJS y Tailwind CSS, simulando la presentación de una camiseta oficial del equipo Corinthians. El proyecto se centra en la estructura de componentes, el estilo de UI y el diseño típico de páginas de e-commerce. Nota: este proyecto no es responsivo.",
+    "projects_productpage_short": "Página de producto estática con React y diseño estilo e-commerce"
+  }
+}

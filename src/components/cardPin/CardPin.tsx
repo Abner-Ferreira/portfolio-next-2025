@@ -1,11 +1,18 @@
 'use client'
-import React from 'react'
+
+
+import { useTranslations } from 'next-intl'
 import { PinContainer } from './PinContainer'
-import { projects } from '@/data/projects'
+import { getProjects } from '@/data/projects'
 
 export default function CardPin() {
+
+  const tProjects = useTranslations('Projects')
+
+  const projects = getProjects(tProjects)
+
   return (
-    <div className='min-h-[70vh] w-full flex items-center justify-center flex-wrap gap-16'>
+    <div className='min-h-[70vh] w-full flex items-center justify-center flex-wrap gap-16' id='spotlight'>
       {projects.map(project =>
         project.spotlight ? (
           <PinContainer

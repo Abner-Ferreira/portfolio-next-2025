@@ -2,7 +2,7 @@ import Footer from '@/components/footer/Footer'
 import Header from '@/components/header/Header'
 import LoaderProvider from '@/components/loader-provider/LoaderProvider'
 import ScrollLoader from '@/components/scroll-loader/Scroll'
-import { GoogleTagManager } from '@next/third-parties/google';
+import { GoogleTagManager } from '@next/third-parties/google'
 import { JetBrains_Mono } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale } from 'next-intl/server'
@@ -16,13 +16,13 @@ const jetBrains = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Abner Ferreira | Dev Front-end',
+  title: 'Abner Ferreira | Full Stack Developer',
   description:
-    'Portfolio of Abner Rodrigues Ferreira, front-end developer specialized in ReactJS, NextJS. Experienced in e-commerce, UX/UI, accessibility, and web performance with a strong focus on best practices and design systems.',
+    'Portfolio of Abner Ferreira, Full Stack Developer specialized in Python, React, Next.js, and TypeScript. Focused on building modern, accessible, scalable, and high-performance applications with strong emphasis on best practices, UX/UI, and business-driven solutions.',
   openGraph: {
-    title: 'Abner Ferreira | Dev Front-end',
+    title: 'Abner Ferreira | Full Stack Developer',
     description:
-      'Portfolio of Abner Rodrigues Ferreira, front-end developer specialized in ReactJS, NextJS. Experienced in e-commerce, UX/UI, accessibility, and web performance with a strong focus on best practices and design systems.',
+      'Portfolio of Abner Ferreira, Full Stack Developer specialized in Python, React, Next.js, and TypeScript. Focused on building modern, accessible, scalable, and high-performance applications with strong emphasis on best practices, UX/UI, and business-driven solutions.',
     url: 'https://portfolio-abner.vercel.app',
     siteName: 'Abner.Dev',
     images: [
@@ -33,6 +33,13 @@ export const metadata: Metadata = {
         alt: 'Portfolio Logo',
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Abner Ferreira | Full Stack Developer',
+    description:
+      'Portfolio of Abner Ferreira, Full Stack Developer specialized in Python, React, Next.js, and TypeScript. Focused on building modern, accessible, scalable, and high-performance applications.',
+    images: ['https://portfolio-abner.vercel.app/logo.svg'],
   },
 }
 

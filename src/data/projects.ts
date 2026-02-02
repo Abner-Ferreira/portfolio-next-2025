@@ -14,6 +14,15 @@ type Projects = {
 
 export function getProjects(t: (key: string) => string): Projects[] {
   return  [
+    {
+      name: 'Motion-co',
+      img: '/motion.png',
+      link: 'https://motion-co.com/',
+      github: 'https://github.com/abner-ferreira/Portfolio-2024',
+      description: t("projects_motion_description"),
+      shortDescription: t("projects_motion_short"),
+      spotlight: true,
+    },
   {
     name: 'GreenDrive',
     img: '/greendrive.png',
@@ -24,15 +33,6 @@ export function getProjects(t: (key: string) => string): Projects[] {
     spotlight: true,
   },
   {
-    name: 'My old portfolio',
-    img: '/old-portfolio.png',
-    link: 'https://portfolio-abner-2024.vercel.app/',
-    github: 'https://github.com/abner-ferreira/Portfolio-2024',
-    description: t("projects_portfolio_description"),
-    shortDescription: t("projects_portfolio_short"),
-    spotlight: true,
-  },
-  {
     name: 'Easy Bank',
     img: '/easybank.png',
     link: 'https://abner-easy-bank.vercel.app/',
@@ -40,6 +40,15 @@ export function getProjects(t: (key: string) => string): Projects[] {
     description: t("projects_easybank_description"),
     shortDescription: t("projects_easybank_short"),
     spotlight: true,
+  },
+  {
+    name: 'My old portfolio',
+    img: '/old-portfolio.png',
+    link: 'https://portfolio-abner-2024.vercel.app/',
+    github: 'https://github.com/abner-ferreira/Portfolio-2024',
+    description: t("projects_portfolio_description"),
+    shortDescription: t("projects_portfolio_short"),
+    spotlight: false,
   },
   {
     name: 'Advice Generator',

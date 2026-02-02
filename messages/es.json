@@ -11,12 +11,12 @@
   "Footer": {
     "footer_send_email": "Envíame un correo",
     "footer_email_subject": "¡Me gustaría conocer más sobre tu trabajo, Abner!",
-    "footer_copyrights": "© Copyright 2025, Abner Ferreira. Todos los derechos reservados."
+    "footer_copyrights": "© Copyright 2026, Abner Ferreira. Todos los derechos reservados."
   },
   "Homepage": {
     "hero_greetings": "¡Hola! Soy Abner Ferreira",
-    "hero_introduction": "Soy <bolderWord>Desarrollador Frontend</bolderWord> enfocado en interfaces <bolderWord>Modernas</bolderWord>, <bolderWord>Accesibles</bolderWord> y <bolderWord>Responsivas</bolderWord>.",
-    "hero_description": "Ingeniero Frontend especializado en React, Next.js y TypeScript. Transformo desafíos en soluciones de alto rendimiento con ejecución rápida y precisa. Comunicador y colaborador eficaz, entrego proyectos complejos a tiempo uniendo excelencia técnica con visión empresarial. Siempre innovando, sin miedo al trabajo duro, desde interfaces pixel-perfect hasta las integraciones más desafiantes.",
+    "hero_introduction": "Soy un <bolderWord>Desarrollador Full Stack</bolderWord> enfocado en crear aplicaciones <bolderWord>Modernas</bolderWord>, <bolderWord>Accesibles</bolderWord>, <bolderWord>Escalables</bolderWord> y <bolderWord>Responsivas</bolderWord>.",
+    "hero_description": "Ingeniero Full Stack especializado en Python en el backend y React, Next.js y TypeScript en el frontend. Transformo desafíos en soluciones de alto rendimiento con una ejecución rápida y precisa. Comunicador sólido y colaborador eficaz, entrego proyectos complejos a tiempo, combinando excelencia técnica, buenas prácticas y visión de negocio. Innovador constante, sin miedo al esfuerzo necesario — desde interfaces con pixel perfecto hasta las integraciones backend más desafiantes.",
     "hero_image_alt": "Imagen caricaturizada de Abner"
   },
   "Spotlight": {
@@ -45,6 +45,14 @@
     "projects_cinetag_description": "Cinetag es una app web responsiva desarrollada con ReactJS y Tailwind CSS que permite explorar y administrar una colección de películas. Presenta enrutamiento dinámico, componentes interactivos y un diseño limpio, brindando una experiencia atractiva. Este proyecto destaca el uso de hooks, rutas y diseño responsivo con React.",
     "projects_cinetag_short": "App para explorar películas con React, rutas y diseño limpio",
     "projects_productpage_description": "La Página de Producto de la Camiseta del Corinthians es una landing page estática construida con ReactJS y Tailwind CSS, simulando la presentación de una camiseta oficial del equipo Corinthians. El proyecto se centra en la estructura de componentes, el estilo de UI y el diseño típico de páginas de e-commerce. Nota: este proyecto no es responsivo.",
-    "projects_productpage_short": "Página de producto estática con React y diseño estilo e-commerce"
+    "projects_productpage_short": "Página de producto estática con React y diseño estilo e-commerce",
+    "projects_motion_description": "Motion Co. es un sitio web corporativo desarrollado para la empresa Motion-Co, enfocado en presentar sus servicios de soluciones digitales, optimización de procesos, estrategia digital y desarrollo de talento. Con un diseño moderno, el sitio organiza el contenido de manera clara para comunicar la propuesta de valor de la empresa y sus servicios empresariales, además de mostrar clientes e información de contacto. El proyecto se centra en la estructura del contenido, la presentación visual y una navegación limpia para un público corporativo.",
+    "projects_motion_short": "Sitio web corporativo desarrollado con React y TypeScript y diseño en Tailwind"
+  },
+  "Error": {
+    "error_title": "¡Ups! Página no encontrada",
+    "error_description": "¡Ups! Parece que esta página no está disponible en este momento. Nuestro perro la comió por accidente. Por favor, vuelve a la página de inicio y sigue navegando.",
+    "error_button": "Volver al inicio",
+    "error_type": "<redWord>404</redWord> - Error"
   }
 }

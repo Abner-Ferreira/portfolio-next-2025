@@ -13,6 +13,10 @@ export const tools: Tool[] = [
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
   },
   {
+    name: 'Python',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
+  },
+  {
     name: 'Vite',
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg',
   },
@@ -43,5 +47,13 @@ export const tools: Tool[] = [
   {
     name: 'Azure DevOps',
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuredevops/azuredevops-original.svg',
+  },
+  {
+    name: 'PostgreSQL',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
+  },
+  {
+    name: 'MySQL',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg',
   },
 ]

@@ -106,7 +106,7 @@ export default function Footer() {
       </div>
 
       <a
-        href={`mailto:abnerferr2015@gmail.com?subject=${t("footer_email_subject")}`}
+        href={`mailto:dev.abnerferreira@gmail.com?subject=${t("footer_email_subject")}`}
         id="email-footer"
         className='bg-[var(--yellow)] p-6 w-screen overflow-x-hidden flex justify-center items-center gap-8 transition-opacity duration-300 hover:opacity-30 hover:cursor-pointer '
       >

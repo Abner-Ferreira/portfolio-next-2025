@@ -13,8 +13,7 @@ export default function ProjectSectionRight({
   img,
   description,
 }: ProjectSectionProps) {
-
-  const t = useTranslations("Work")
+  const t = useTranslations('Work')
 
   return (
     <>
@@ -96,19 +95,23 @@ export default function ProjectSectionRight({
               md:self-start md:w-[40%]
             '
             >
-              {t("work_visit_project")}
+              {t('work_visit_project')}
             </a>
 
-            <a
-              href={github}
-              id={`Projeto - ${name}`}
-              target='_blank'
-              className='w-[100%] flex justify-center items-center bg-transparent text-[var(--yellow)] px-6 py-2 border-b-2 border-[var(--yellow)] hover:border-2 transition-all duration-75 self-center hover:cursor-pointer
+            {name != 'Motion-co' ? (
+              <a
+                href={github}
+                id={`Projeto - ${name}`}
+                target='_blank'
+                className='w-[100%] flex justify-center items-center bg-transparent text-[var(--yellow)] px-6 py-2 border-b-2 border-[var(--yellow)] hover:border-2 transition-all duration-75 self-center hover:cursor-pointer
               md:self-start md:w-[40%]
             '
-            >
-              {t("work_view_project_code")}
-            </a>
+              >
+                {t('work_view_project_code')}
+              </a>
+            ) : (
+              <></>
+            )}
           </div>
         </motion.div>
       </section>

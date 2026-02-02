@@ -320,10 +320,10 @@ export default function Header() {
                     lg:text-7xl lg:pr-24 lg:m-8'
                 >
                   <a
-                    href='/pdf/Abner_Ferreira_Frontend_Developer.pdf'
+                    href='/pdf/Abner_Ferreira_FullStack_Developer_python.pdf'
                     target='_blank'
                     rel='noopener noreferrer'
-                    data-version='cv-2025'
+                    data-version='cv-2026'
                   >
                     {t('header_menu_3')}
                   </a>
